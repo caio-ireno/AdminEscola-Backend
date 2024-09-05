@@ -1,0 +1,5 @@
+rootProject.name = 'AdminEscola-Backend'
+include 'domain'
+include 'application'
+include 'infrastructure'
+
