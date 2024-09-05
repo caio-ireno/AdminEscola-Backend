@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group = 'com.admin.escola.application'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation(project(":domain"))
+    implementation group: 'io.vavr', name: 'vavr', version: '0.10.4'
+    testImplementation platform('org.junit:junit-bom:5.10.0')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}
